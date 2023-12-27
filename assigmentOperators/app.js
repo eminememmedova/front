@@ -57,3 +57,7 @@
 //alert(++a); //artim olur 
 //alert(a++); //artim olmur
 
+// let a= "5";
+// let b=+a;
+// console.log(typeof b);
+// console.log(b);
