@@ -123,7 +123,7 @@
 //     else{
 //         console.log("melumatlari duzgun daxil edin  " + bki);
 //     }
- 
+
 //! yanacaqdoldurma menteqesi
 
 /*
@@ -152,7 +152,7 @@ gelen musteriden alinacaq melumatlar
 //   if (tip ==1 || tip==2 || tip==3) {
 //     let litr = Number(prompt("yanacaq litrini yazin"))
 //     let balans = Number(prompt("balansinizi qeyd edin"))
-     
+
 //     if (tip ==1 ) {
 //         let odenecekMebleg= dizel*litr;
 //         let eksik=odenecekMebleg-balans; 
@@ -161,9 +161,9 @@ gelen musteriden alinacaq melumatlar
 //           alert("yanacaq alindi"+ yeniSetir
 //           +"qaliq balans:  " +balans)
 //        }
-       
+
 //        else{
-            
+
 //           alert("yanacaq alinmnadi"+ yeniSetir
 //           +"odenecek mebleg" + odenecekMebleg+ yeniSetir
 //           +"balans"+ balans+ yeniSetir
@@ -178,13 +178,13 @@ gelen musteriden alinacaq melumatlar
 //          alert("yanacaq alindi"+ yeniSetir
 //          +"qaliq balans:  " +balans)
 //       } else{
-            
+
 //           alert("yanacaq alinmnadi"+ yeniSetir
 //           +"odenecek mebleg" + odenecekMebleg+ yeniSetir
 //           +"balans"+ balans+ yeniSetir
 //           + "eksik" + eksik+ yeniSetir)
 //        }
-   
+
 //     }
 //     else if (tip==3) {
 //         let odenecekMebleg= lpg*litr;
@@ -194,7 +194,7 @@ gelen musteriden alinacaq melumatlar
 //          alert("yanacaq alindi"+ yeniSetir
 //          +"qaliq balans:  " +balans)
 //       } else{
-            
+
 //           alert("yanacaq alinmnadi"+ yeniSetir
 //           +"odenecek mebleg" + odenecekMebleg+ yeniSetir
 //           +"balans"+ balans+ yeniSetir
@@ -206,7 +206,140 @@ gelen musteriden alinacaq melumatlar
 //   }
 
 
- 
+
 //   else if (tip !=1 || tip!=2 || tip!=3) {
 //     alert("duzgun secim edin");
 //   }
+
+
+
+
+
+//?---------------------------------------------------------
+//?---------------------------------------------------------
+
+
+/*
+1-Dizel  : 24.53
+2-Benzin : 22.25
+3-LPG    : 11.1
+
+
+gelen musteriden alinacaq melumatlar
+1-yanacaq tipi
+2-yuklenecek yanacagin litri
+*/
+
+
+// let dizel = 24.53;
+// let benzin = 22.25;
+// let lpg = 11.1;
+// let yeniSetir = "\r\n";
+// let secim = Number(prompt("1.Dizel" + yeniSetir
+//                         + "2.Benzin" + yeniSetir
+//                         +"3.lpg" + yeniSetir
+//                         +"1-4 arasi bir secim edin"));
+// let litr = Number(prompt("nece litr?"));
+// let balans = Number(prompt("balansiniz?"));
+// switch (secim) {
+//     case 1:
+//         if (balans >= (dizel*litr)) {
+//             alert("Ugurlu"+yeniSetir
+//             +"cari balans: "+ (balans-=dizel*litr))
+//         }else{
+//             alert("ugursuz"+yeniSetir
+//             +"odenecek mebleg: " +(dizel*litr)+yeniSetir
+//             +"balans: "+ balans+yeniSetir
+//             +"eksik: "+ ((dizel*litr)-balans))
+//         }
+//         break;
+
+//         case 2:
+//             if (balans >= (benzin*litr)) {
+//                 alert("Ugurlu"+yeniSetir
+//                 +"cari balans: "+ (balans-=benzin*litr))
+//             }else{
+//                 alert("ugursuz"+yeniSetir
+//                 +"odenecek mebleg: " +(benzin*litr)+yeniSetir
+//                 +"balans: "+ balans+yeniSetir
+//                 +"eksik: "+ ((benzin*litr)-balans))
+//             }
+//         break;
+
+//      
+//         case 3:
+//            if (balans >= (benzin*litr)) {
+//                 alert("Ugurlu"+yeniSetir
+//                 +"cari balans: "+ (balans-=benzin*litr))
+//             }else{
+//                 alert("ugursuz"+yeniSetir
+//                 +"odenecek mebleg: " +(benzin*litr)+yeniSetir
+//                 +"balans: "+ balans+yeniSetir
+//                 +"eksik: "+ ((benzin*litr)-balans))
+//             }
+//         break;
+//     default:
+//         alert("1-3 arasi secim edin")
+//         break;
+// }
+
+
+/*
+1-Dizel  : 24.53
+2-Benzin : 22.25
+3-LPG    : 11.1
+
+
+gelen musteriden alinacaq melumatlar
+1-yanacaq tipi
+2-yuklenecek yanacagin litri
+*/
+//?---------------------------------------------------------
+//?---------------------------------------------------------
+// let dizel = 24.53;
+// let benzin = 22.25;
+// let lpg = 11.1;
+// let yeniSetir = "\r\n";
+// let secim = Number(prompt("1.Dizel" + yeniSetir
+//     + "2.Benzin" + yeniSetir
+//     + "3.lpg" + yeniSetir
+//     + "1-3 arasi bir secim edin"));
+
+// if (secim == 1 || secim == 2 || secim == 3) {
+//     let litr = Number(prompt("nece litr?"));
+//     let balans = Number(prompt("balansiniz?"));
+//     if (secim == 1) {
+//         if (balans >= (dizel * litr)) {
+//             alert("Ugurlu" + yeniSetir
+//                 + "cari balans: " + (balans -= dizel * litr))
+//         } else {
+//             alert("ugursuz" + yeniSetir
+//                 + "odenecek mebleg: " + (dizel * litr) + yeniSetir
+//                 + "balans: " + balans + yeniSetir
+//                 + "eksik: " + ((dizel * litr) - balans))
+//         }
+//     }else if (secim == 2) {
+//         if (balans >= (benzin*litr)) {
+//                             alert("Ugurlu"+yeniSetir
+//                             +"cari balans: "+ (balans-=benzin*litr))
+//                         }else{
+//                             alert("ugursuz"+yeniSetir
+//                             +"odenecek mebleg: " +(benzin*litr)+yeniSetir
+//                             +"balans: "+ balans+yeniSetir
+//                             +"eksik: "+ ((benzin*litr)-balans))
+//                         }
+//     }
+//     else if (secim==3) {
+//         if (balans >= (lpg*litr)) {
+//                             alert("Ugurlu"+yeniSetir
+//                             +"cari balans: "+ (balans-=lpg*litr))
+//                         }else{
+//                             alert("ugursuz"+yeniSetir
+//                             +"odenecek mebleg: " +(lpg*litr)+yeniSetir
+//                             +"balans: "+ balans+yeniSetir
+//                             +"eksik: "+ ((lpg*litr)-balans))
+//                         }
+//     }
+// }else{
+//     alert("duzgun secim edin")
+// }
