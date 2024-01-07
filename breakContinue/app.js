@@ -13,15 +13,15 @@
 
 //1 2 3 4 5 6 7 9 10
 
-let a=0;
-while (a<=10) {
-    a++;
-    if (a==8) {
-        continue;
-    }
-    if (a==11) {
-        break;
-    }
-    console.log(a);
+// let a=0;
+// while (a<=10) {
+//     a++;
+//     if (a==8) {
+//         continue;
+//     }
+//     if (a==11) {
+//         break;
+//     }
+//     console.log(a);
 
-}
+// }
