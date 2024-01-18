@@ -12,4 +12,4 @@
 //     alert (num + "is prime number.")
 // } else {
 //     alert (num + "is not prime number.")
-// }
+// } 
