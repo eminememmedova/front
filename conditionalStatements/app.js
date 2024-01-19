@@ -24,6 +24,13 @@
 //     alert("qebul olmadiniz");
 // }
 
+
+//? if else diger sintaksisi (? .. : ..)
+// let x=2;
+// let y=4;
+// let z = (x<y)? 'x' : 'y'; 
+// console.log(z);
+
 //!test3:
 
 // let choice = prompt("pls make a choice");
