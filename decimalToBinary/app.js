@@ -1,11 +1,25 @@
-let eded = Number(prompt("ededi daxil edin"));
+// decimal to binary
 
-function decimalToBinary(eded) {
-    let binary= "";
-    for (let i = eded; i < eded/2==1; i/2) {
-       console.log(eded);
-    }  
-   return binary; 
+convertDecimalToBinary(10);
+
+function convertDecimalToBinary(number) {
+   let binary = "";
+   while (true) {
+      binary += (number % 2).toString();
+      number = Math.floor(number / 2);
+      if (number == 1) {
+         binary += 1;
+         break;
+      }
+   }
+   let result = revers(binary);
+   console.log(result);
 }
-let tobinary = decimalToBinary(eded);
-console.log(tobinary);
+
+function revers(oldBinary) {
+   reversBinary = "";
+   for (let i = oldBinary.length - 1; i >= 0; i--) {
+      reversBinary += oldBinary.charAt(i)
+   }
+   return reversBinary;
+}
