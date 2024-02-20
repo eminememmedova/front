@@ -78,5 +78,5 @@ let cars = ["bmw", "toyota", "mercedes", "porsche", "bmw"];
 // console.log(element);
 
 //?---INCLUDE METHOD---
-let element = cars.includes("a");
-console.log(element);
+// let element = cars.includes("a");
+// console.log(element);
