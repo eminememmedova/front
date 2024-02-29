@@ -1,0 +1,15 @@
+{
+    "outline.showArrays": true,
+    "outline.showBooleans": true,
+    "outline.showClasses": true,
+    "outline.showVariables": true,
+    "outline.showTypeParameters": true,
+    "outline.showStructs": true,
+    "outline.showStrings": true,
+    "outline.showProperties": true,
+    "search.useGlobalIgnoreFiles": false,
+    "search.useParentIgnoreFiles": false,
+    "scm.alwaysShowActions": false,
+    "scm.alwaysShowRepositories": false,
+    "scm.defaultViewMode": "list"
+}
